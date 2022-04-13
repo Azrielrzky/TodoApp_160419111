@@ -18,8 +18,8 @@ class ListTodoViewModel(application: Application)
     val todoLD = MutableLiveData<List<Todo>>()
     val todoLoadErrorLD = MutableLiveData<Boolean>()
     val loadingLD = MutableLiveData<Boolean>()
-    private var job = Job()
 
+    private var job = Job()
     override val coroutineContext: CoroutineContext
         get() = job + Dispatchers.Main
 
@@ -30,7 +30,6 @@ class ListTodoViewModel(application: Application)
             val db = Room.databaseBuilder(
                 getApplication(),
                 TodoDatabase::class.java, "newtododb").build()
-
             todoLD.value = db.todoDao().selectAllTodo()
         }
     }
@@ -41,7 +40,6 @@ class ListTodoViewModel(application: Application)
                 getApplication(),
                 TodoDatabase::class.java, "newtododb").build()
             db.todoDao().deleteTodo(todo)
-
             todoLD.value = db.todoDao().selectAllTodo()
         }
     }

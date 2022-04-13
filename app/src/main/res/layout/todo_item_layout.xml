@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkTask"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -20,7 +20,9 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@+id/checkBox"
-        app:srcCompat="@drawable/ic_baseline_edit_24"
-        tools:layout_editor_absoluteX="339dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/checkTask"
+        app:layout_constraintEnd_toEndOf="@+id/checkTask"
+        app:layout_constraintTop_toTopOf="@+id/checkTask"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
