@@ -5,6 +5,11 @@
       <map>
         <entry key="..\:/TodoApp_160419111/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.26614583333333336" />
         <entry key="..\:/TodoApp_160419111/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/TodoApp_160419111/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/TodoApp_160419111/app/src/main/res/layout/activity_main.xml" value="0.1766304347826087" />
+        <entry key="..\:/TodoApp_160419111/app/src/main/res/layout/fragment_create_todo.xml" value="0.264" />
+        <entry key="..\:/TodoApp_160419111/app/src/main/res/layout/fragment_todo_list.xml" value="0.264" />
+        <entry key="..\:/TodoApp_160419111/app/src/main/res/layout/todo_item_layout.xml" value="0.264" />
       </map>
     </option>
   </component>
