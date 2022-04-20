@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <CheckBox
         android:id="@+id/checkTask"
@@ -20,9 +20,9 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_edit_24"
         app:layout_constraintBottom_toBottomOf="@+id/checkTask"
         app:layout_constraintEnd_toEndOf="@+id/checkTask"
         app:layout_constraintTop_toTopOf="@+id/checkTask"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_baseline_edit_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
