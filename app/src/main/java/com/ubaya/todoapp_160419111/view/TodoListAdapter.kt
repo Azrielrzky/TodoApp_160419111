@@ -20,7 +20,12 @@ class TodoListAdapter(val todoList:ArrayList<Todo>, val adapterOnClick : (Todo) 
     }
 
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
-        holder.view.checkTask.setText(todoList[position].title.toString())
+        val priority = when(todoList[position].priority){
+            1 -> "Low"
+            2 -> "Medium"
+            else -> "HIGH"
+        }
+        holder.view.checkTask.setText("[$priority] ${todoList[position].title.toString()}")
         holder.view.checkTask.setOnCheckedChangeListener { compoundButton, b ->
             adapterOnClick(todoList[position])
         }
